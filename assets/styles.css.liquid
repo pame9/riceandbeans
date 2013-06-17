@@ -316,6 +316,11 @@ ul.expanded > li, ol.expanded > li { margin-bottom: 10px; }
 .logo h1 a:hover { text-decoration:none; color:{{ settings.header_color }}; }
 .logo a, .logo img { display:block; margin:0; }
 
+.whiteheader {
+	background-color: white;
+	height: 275px;
+}
+
 /* 3.3 - Navigation */
 {% if settings.google_nav_font != "none" %}
 nav { font-family:{{ settings.google_nav_font | replace: '+', ' ' }}; }

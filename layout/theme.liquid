@@ -77,11 +77,18 @@
         </ul>
       </div>
     </div>
+    {% if settings.navigation_alignment == "below" %}
+		<div class="whiteheader">
+		</div>
+		<div class="clearfix">
+		</div>
+    {% endif %}
+
   </div>
   <!-- End toolbar -->
   
   <!-- Begin wrapper -->
-  <div id="transparency" class="wrapper">
+  <div id="" class="wrapper">
     <div class="row">      
       <!-- Begin right navigation -->
       {% if settings.navigation_alignment == "right" %}
@@ -136,6 +143,14 @@
       </section> 
       {% endif %}
       <!-- End below navigation -->
+      
+    </div>
+  </div>
+  <!-- End wrapper -->
+  
+  <!-- Begin wrapper -->
+  <div id="transparency" class="wrapper">
+    <div class="row">      
       
       <!-- Begin content-->
       <section id="content" class="clearfix">
