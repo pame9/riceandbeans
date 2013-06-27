@@ -4,8 +4,9 @@
     <h1>{{ page.title }}</h1>
     <div class="page-with-contact-form">
       {{ page.content }}
-            
-        {% form 'contact' %}
+        <div class='span6'>
+	      <p class="pink-italics">The hunt is half the fun!</p> 
+	      <p>Looking for that perfect vintage or designer piece?  Just let us know what it is and let us do the rest!</p>        {% form 'contact' %}
         {% if form.posted_successfully? %}
         <div class="successForm feedback">
           <p>Thanks for contacting us! We'll get back to you as soon as possible.</p>
@@ -23,19 +24,19 @@
 
         <div id="contactFormWrapper">
           <p>
-            <label>Your Name:</label><br/>
-            <input type="text" id="contactFormName" name="contact[name]" placeholder="John Doe" />
+            <label>Name:</label><br/>
+            <input type="text" id="contactFormName" name="contact[name]" placeholder="Jane Doe" />
           </p>
           <p>
             <label>Email:</label><br/>
-            <input type="email" id="contactFormEmail" name="contact[email]" placeholder="john@example.com" />
+            <input type="email" id="contactFormEmail" name="contact[email]" placeholder="jane@example.com" />
           </p>
           <p>
             <label>Phone Number:</label><br/>
             <input type="telephone" id="contactFormTelephone" name="contact[phone]" placeholder="555-555-1234" />
           </p> 
           <p>
-            <label>Message:</label><br/>
+            <label>What are you looking for?:</label><br/>
             <textarea rows="15" cols="75" id="contactFormMessage" name="contact[body]" placeholder="Your Message"></textarea>
           </p>
           <p>

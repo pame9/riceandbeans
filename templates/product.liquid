@@ -3,7 +3,7 @@
   <div class="row clearfix">
     
     <!-- Begin product photos -->
-    <div class="{% if product.images.size == 1 or settings.thumbnails_position == 'below' %}span6{% else %}span5{% endif %}">
+    <div class="{% if product.images.size == 1 or settings.thumbnails_position == 'below' %}span6{% else %}span6{% endif %}">
       
       <!-- Begin featured image -->
       <div class="image featured">
@@ -75,12 +75,12 @@
     
     
     <!-- Begin description -->
-    <div class="span6">
+    <div class="span5">
       
-      <h1 class="title">{{ product.title }}</h1>
+      <h1 class="product">{{ product.title }}</h1>
       
       <div class="purchase">
-        <h2 class="price" id="price-preview">{{ product.price_min | money }}{% if product.price_min < product.compare_at_price_min %} <del>{{ product.compare_at_price_min | money }}</del>{% endif %}</h2>
+        <p class="price" id="price-preview">{{ product.price_min | money }}{% if product.price_min < product.compare_at_price_min %} <del>{{ product.compare_at_price_min | money }}</del>{% endif %}</p>
       </div>
             
       <form id="add-item-form" action="/cart/add" method="post" class="variants clearfix">
